@@ -1,0 +1,7 @@
+{
+  "positions": [
+    { "symbol": "BNBUSDT", "buy_price": 706.48, "amount": 0.007, "date": "2026-08-27" },
+    { "symbol": "BNBUSDT", "buy_price": 684.60, "amount": 0.0073, "date": "2026-09-02" }
+  ],
+  "alert_threshold_pct": 3.0
+}
