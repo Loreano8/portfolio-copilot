@@ -1,4 +1,4 @@
-# BNB Portfolio Copilot 🛡️📊
+# Portfolio Copilot 🛡️📊
 
 An AI agent, built on **Binance Agent OS**, that turns "how's my DCA doing?"
 into a real **Data & Analysis** workflow: weighted-average cost basis,
