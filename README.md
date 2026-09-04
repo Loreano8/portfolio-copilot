@@ -81,6 +81,18 @@ Verdict: healthy, mild gain — normal range, nothing alarming.
   a fixed asset, amount, and cadence; every run reports what happened,
   and you can revoke it at any time by asking
 
+## Where this works
+
+This is a portable Claude skill — same file, several places to use it:
+
+- **claude.ai (web) or Claude Desktop** — paste it into Customize → Skills,
+  as described above. Works identically in both.
+- **VS Code, via the Claude Code extension** — instead of pasting into
+  Skills settings, place `SKILL.md` in a `.claude/skills/portfolio-copilot/`
+  folder inside your project. Claude Code picks it up automatically from
+  there — same skill, no rewriting needed.
+- **Unattended, via a Claude Code Routine** — see "Automation" below.
+
 ## Automation
 
 This skill also works unattended as a **Claude Code Routine** — a native,
