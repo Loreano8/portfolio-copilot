@@ -25,10 +25,18 @@ confirmation model.
    **Trade** scope is granted, not just Market data / Account — everything
    else in this skill only ever needs read access.
 
+![Navigating to Customize → Connectors → Add](images/step1-connectors.png)
+![The custom connector form, with the Binance MCP URL entered](images/step1b-connector-form.png)
+
 **Step 2 — Add this skill**
-1. Still in **Customize**, go to **Skills** → **Add skill**
-2. Open [`SKILL.md`](./SKILL.md) in this repo, copy its full content
-3. Paste it into the skill editor and save
+1. Download [`SKILL.md`](./SKILL.md) from this repo
+2. Still in **Customize**, go to **Skills** → **Add**, then pick one:
+   - **Upload skill** — drop the `.md` file in directly; a quick security
+     scan runs automatically, then save
+   - **Create a skill** — name it, paste a short description, then paste
+     the file's content into the instructions box and save
+
+![Navigating to Customize → Skills → Add](images/step2-skills.png)
 
 **Step 3 — Use it**
 Start a new chat, make sure the Binance connector is active (check the
@@ -86,12 +94,19 @@ Verdict: healthy, mild gain — normal range, nothing alarming.
 This is a portable Claude skill — same file, several places to use it:
 
 - **claude.ai (web) or Claude Desktop** — paste it into Customize → Skills,
-  as described above. Works identically in both.
-- **VS Code, via the Claude Code extension** — instead of pasting into
-  Skills settings, place `SKILL.md` in a `.claude/skills/portfolio-copilot/`
-  folder inside your project. Claude Code picks it up automatically from
-  there — same skill, no rewriting needed.
+  as described above. Tested repeatedly on both; works identically.
+- **VS Code, via the Claude Code extension** — place `SKILL.md` in a
+  `.claude/skills/portfolio-copilot/` folder inside your project, following
+  Claude Code's standard skill convention. This follows the documented
+  pattern but wasn't separately verified for this submission — the
+  claude.ai / Claude Desktop path above is the tested one.
 - **Unattended, via a Claude Code Routine** — see "Automation" below.
+
+This skill is written for Claude specifically (the `SKILL.md` format is
+Anthropic's own convention) — it isn't confirmed to work in other agent
+tools like Codex. Separately, Binance's own MCP Server documentation lists
+Codex CLI as one of several compatible clients for connecting to Agent OS
+itself, but that's about the connector, not about this skill file.
 
 ## Automation
 
